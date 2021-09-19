@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+ 
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
-  </head>
+ </head>
 
   <!--Bungee Shade, cursive font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,26 +18,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
   
   <style>
-    
-    .white-box {
-        background-color: white;
-        width: auto;
-        height: 93px;
-        padding-top: 10px;
-        margin-left: -10px;
-	}
-
-    .white-box-aside {
-        background-color: #58B9EA;
-        width: 470px;
-        height: 1300px;
-        position: sticky;
-        bottom: -30px;
-        border-width: 5px;
-        border-color: #58B9EA;
-        border-style: solid;
-        border-radius: 50px;
-	}
 
    body {
         background-color: #97CAEF;
@@ -44,38 +25,58 @@
         padding: 0;
 	}
 
-   h1 {
-       font-family: 'Bungee Shade', cursive;
-       font-size: 70px;
-       margin-top: -30px;
-       margin-left: 15px;
-   }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav {
+        width: 100%;
+        height: 100px;
+        background-color: #fff;
+    }
 
-   nav {
-       font-family: 'Graduate', cursive;
-       font-size: 25px;
-       margin-top: -80px;
-       margin-left: 37px;
-       
-   }
+    ul {
+        margin-left: 130px;    
+    }
+
+    ul li {
+        list-style: none;
+        display: inline-block;
+        float: left;
+    }
+    
+    ul li a {
+        display: block;
+        text-decoration: none;
+        font-size: 14px;
+        font-family: arial;
+        color: #1e1e1e;
+        line-height: 100px;
+        padding: 0 20px;
+    }
+    
+    ul li a:hover {
+        color: #97CAEF;
+    }
+
+    .img-logo {
+        width: 100px;
+        margin-left: -450px;
+    }
 
   </style>
   
-  <div class="white-box"</div>
-  <div class="white-box-aside"</div>
-  
   <body>
-
-    <h1>Welcome!</h1>
-    <img src="" 
+    <nav>
+        <ul>
+            <li><a href=profile.html>Profile<a/></li>
+            <li><a href=dashboard.html>Dashboard<a/></li>
+            <li><a href=faq.html>FAQ<a/></li>
+            <li><a href=blog.html>Blog<a/></li>
+        </ul>
+    <img class="img-logo" src="hz-logo.jpg" alt="hz logo">
+    </nav>
 
   </body>
-
-  <nav>
-    <a href=profile.html>Profile<a/>
-    <a href=dashboard.html>Dashboard<a/>
-    <a href=faq.html>FAQ<a/>
-    <a href=blog.html>Blog<a/>
-  </nav>
-
 </html>
